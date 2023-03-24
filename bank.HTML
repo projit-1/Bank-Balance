@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Deposit</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="text-3xl font-bold text-center uppercase">Blance of Account</h2>
+        <section>
+            <div class="myBlance grid grid-cols-3 gap-4 w-10/12 mx-auto">
+                <div class=" bg-lime-400 rounded-md py-2">
+                    <h2 class="mx-2">Diposit</h2>
+                    <h2 class="mx-2 my-2">$ <span id="totaldeposit">
+                            00
+                        </span></h2>
+                </div>
+                <div class=" bg-green-400 rounded-md py-2">
+                    <h2 class="mx-2">Withdrow</h2>
+                    <h2 class="mx-2 my-2">$ <span id="totalwithdrow">
+                            00
+                        </span></h2>
+                </div>
+                <div class=" bg-blue-400 rounded-md py-2">
+                    <h2 class="mx-2">Balance</h2>
+                    <h2 class="mx-2 my-2">$ <span id="totalbalance">
+                            2000
+                        </span></h2>
+                </div>
+            </div>
+        </section>
+        <div class="Balance-Withdrow grid grid-cols-2 gap-4 w-10/12 mx-auto mt-5"">
+            <div class=" diposit bg-fuchsia-400">
+            <input class="block mt-2 mx-2 py-2" type="text" name="" id="depositfield"
+                placeholder="$ You want to diposit">
+            <button id="dipositbtn"
+                class="w-36 my-2 mx-2 hover:bg-lime-500 bg-yellow-400 text-2xl text-white py-2 px-3 rounded-md">
+                Diposit
+            </button>
+        </div>
+        <div class=" withdrow bg-rose-400">
+            <input class="block mt-2 mx-2 py-2" type="text" name="" id="withdrowfield"
+                placeholder="$ You want to withdrow">
+            <button id="withdrowbtn"
+                class="w-36 my-2 mx-2 hover:bg-lime-500 bg-yellow-400 text-2xl text-white py-2 px-3 rounded-md">
+                Withdrow
+            </button>
+        </div>
+
+    </div>
+    <div class="fooetr w-48 mx-auto mt-5">
+        <button id="withdrowbtn"
+            class="w-36 my-2 mx-2 hover:bg-lime-500 bg-yellow-400 text-2xl text-white py-2 px-3 rounded-md">
+            <a href="http://127.0.0.1:5500/index.html">Back</a>
+        </button>
+    </div>
+    </div>
+    <script src="./diposit.js"></script>
+    <script src="./withdrow.js"></script>
+
+</body>
+
+</html>
